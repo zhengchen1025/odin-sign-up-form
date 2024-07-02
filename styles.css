@@ -5,14 +5,72 @@
 }
 
 .left-part {
+  display: flex;
+  flex-direction: column;
+
   flex: 1;
   background-image: url(background-leaf.jpg);
   background-size: cover;
   background-position: center;
+  max-width: 38%;
+  height: 100vh;
 }
 
 .right-part {
-    flex:1;
-    background-color: azure;
-    background-position: center;
+  flex: 1;
+  background-color: rgb(236, 248, 246);
+  background-position: center;
+}
+
+.logo-block {
+  margin-top: 25%;
+  width: 100%;
+  background-color: hsla(183, 14%, 32%, 0.5);
+}
+
+.logo-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10rem;
+}
+
+.logo-block img,
+.logo-block p {
+  display: inline-block;
+}
+
+.credit-block {
+    height: 70vh;
+    display: flex;
+  justify-content: center;
+  align-items: end;
+  margin-bottom: 1rem;
+  color: aliceblue;
+}
+a {
+    color: aliceblue;
+}
+/* id */
+
+#odin-logo-img {
+  max-width: 6rem;
+  height: auto;
+}
+
+#odin-logo-text {
+  font-family: norsebold, sans-serif;
+  font-size: 7rem;
+  color: aliceblue;
+}
+
+/* font-face */
+
+@font-face {
+  font-family: "norsebold";
+  src: url("fonts/norse_bold-webfont.woff2") format("woff2"),
+    url("fonts/norse_bold-webfont.woff") format("woff"),
+    url("fonts/Norse\ Bold.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
